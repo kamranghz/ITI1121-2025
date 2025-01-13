@@ -1,0 +1,8 @@
+src/
+├── MyInteger.java                       # Custom class to encapsulate integer value
+├── ObjectInitialization.java            # Demonstrates initializing objects with primitive and reference types
+├── PrimitiveComparison.java             # Shows how to compare primitive data types
+├── ComparePrimitiveWithObject.java      # Demonstrates comparing primitives with wrapper objects
+├── CompareTwoObjects.java               # Compares two objects by value using a custom equals method
+├── CompareObjectsWithMemoryAddresses.java # Shows memory addresses of objects and compares them
+└── CompareObjectsByReference.java       # Demonstrates comparison of object references
