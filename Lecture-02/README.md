@@ -1,19 +1,43 @@
-Lecture 2 - Summary of Today's Code
-Description:
-This folder contains the source code and examples from Lecture 2 of the ITI1121-2025 course. The code demonstrates key concepts in object-oriented programming (OOP) in Java, including the following:
 
-Primitive vs. Reference Types: Understanding memory allocation for primitive and reference variables, with visual diagrams illustrating stack and heap memory usage.
-Object-Oriented Programming Basics:
-Implementation of a custom MyInteger class to explore class structures, constructors, and object instantiation.
-Differences in memory behavior between primitive data types (int) and objects in Java.
-Practical Example:
-Incrementing values of primitive and object types.
-Using multiple references (aliasing) pointing to the same object.
-Demonstrating shared object behavior in the heap.
-This example emphasizes the importance of understanding Java's memory management to effectively design efficient and maintainable software.
+---
 
-How to Run:
+## Key Files and Descriptions
 
-Clone the repository and navigate to the Lecture-2 folder.
-Compile the Java code using javac MyInteger.java.
-Run the program with java MyInteger to see the output in the terminal.
+### 1. **`ByteMultiplicationExamples.java`**
+   - Demonstrates byte arithmetic in Java.
+   - Highlights how Java handles **overflow** and **type promotion** during operations involving the `byte` data type.
+   - Provides practical examples of multiplication with small integers.
+
+### 2. **`Constant - gc.java` and `Constant.java`**
+   - Explains how to define constants in Java using the `final` keyword.
+   - **`Constant - gc.java`**: Focuses on constants in a garbage-collected context.
+   - Showcases the importance of immutability and good practices for defining constants in Java.
+
+### 3. **`MyInteger.java`**
+   - Custom implementation of an `Integer`-like class.
+   - Demonstrates how to create and use custom classes to manage integer values.
+   - Includes examples of encapsulation and methods for managing and manipulating integer values.
+
+### 4. **`PrimitiveTypesExample.java`**
+   - Explains the use of **primitive types** (`int`, `double`, `float`, `byte`, `char`, etc.).
+   - Provides examples of how primitive types are stored in memory and how they differ from reference types.
+   - Demonstrates operations and limitations of primitives.
+
+### 5. **`ReferenceTypes.java`**
+   - Covers the concept of **reference types** in Java (e.g., objects, arrays).
+   - Explains the difference between **stack** and **heap** memory.
+   - Provides examples of how Java handles references, nullability, and memory management.
+
+---
+
+## How to Use
+
+### Prerequisites
+- **Java Development Kit (JDK)** version 8 or higher.
+- A Java-compatible IDE such as IntelliJ IDEA, Eclipse, or Visual Studio Code.
+
+### Steps to Run
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/kamranghz/ITI1121-2025.git
+   cd ITI1121-2025
