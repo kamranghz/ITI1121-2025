@@ -22,4 +22,20 @@ public class Counter {
     public void reset() {
         value = 0;
     }
+
+    // Main method to test the functionality of the Counter class.
+    public static void main(String[] args) {
+        Counter counter = new Counter(); // Create an instance of the Counter class
+
+        // Display the initial value
+        System.out.println("Initial Value: " + counter.getValue());
+
+        // Increment the counter and display the updated value
+        counter.increment();
+        System.out.println("After Increment: " + counter.getValue());
+
+        // Reset the counter and display the value
+        counter.reset();
+        System.out.println("After Reset: " + counter.getValue());
+    }
 }

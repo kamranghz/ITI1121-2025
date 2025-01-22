@@ -56,8 +56,4 @@ public class CalledByValue2 {
 
 
 
-   System.out.println("Are the points equal? " + equal(p1, p2));
-
-
-   Point p3 = add(p1, p2);
-
+  
