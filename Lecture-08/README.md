@@ -1,12 +1,5 @@
-<<<<<<< HEAD
-ITI1121 - Introduction to Computing II
-University of Ottawa
-
-This repository contains source code, examples, and exercises related to ITI1121 - Introduction to Computing II. It serves as a learning resource for students to explore concepts in object-oriented programming, data structures, and algorithm design.
-
-Feel free to explore and contribute!
 =======
-# 📌 ITI1121 - Lecture 08: Object-Oriented Programming Concepts
+# ITI1121 - Lecture 08: Object-Oriented Programming Concepts
 
 Welcome to **Lecture 08** of the **ITI1121-2025** course. This lecture focuses on fundamental Object-Oriented Programming (OOP) concepts, including **Abstraction, Polymorphism, and Upcasting/Downcasting**. The code examples provided in this repository will help reinforce these concepts through practical Java implementations.
 
@@ -104,5 +97,3 @@ By the end of this lecture, students should:
 ## 🤝 Contributing
 Feel free to fork this repository and improve upon the examples. Pull requests are welcome!
 
----
->>>>>>> 56b4cd6 (Added Lecture 08 to ITI1121)
