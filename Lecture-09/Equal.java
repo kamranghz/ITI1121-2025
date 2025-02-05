@@ -42,7 +42,7 @@ public class Equal {
         Equal c = new Equal(2, "John Doe");
 
         // Comparing two objects with the same values
-        System.out.println("Comparing 'a' and 'b': " + a.equals(b)); // Expected: true
+        System.out.println("Comparing 'a' and 'b': " + a==b); // Expected: true
         // Comparing two objects with different values
         System.out.println("Comparing 'a' and 'c': " + a.equals(c)); // Expected: false
 
