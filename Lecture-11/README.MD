@@ -21,6 +21,7 @@ ITI1121-2025/
 │   ├── ArrayStackDemo.java
 │   ├── DynamicArrayStack.java
 │   ├── GenericArrayStack.java
+│   ├── TwoStacksDemo.java
 ```
 
 ## 📜 Overview
@@ -33,6 +34,8 @@ This repository demonstrates various implementations of **stack** data structure
 - **`Test.java`** - A program to test the stack implementation.
 - **`DynamicArrayStack.java`** - A dynamically resizing array-based stack.
 - **`GenericArrayStack.java`** - A generic stack implementation using an array.
+- **`TwoStacksDemo.java`** - **Optimized memory management** by implementing two stacks in a single array.
+
 
 ## 🚀 Compilation & Execution
 
@@ -56,6 +59,7 @@ java Stack1.Mystery arg1 arg2 arg3
 ```sh
 java Stack2.Test 1 2 3 4 5
 ```
+
 
 ## 🔗 Repository
 
