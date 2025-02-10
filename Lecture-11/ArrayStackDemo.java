@@ -54,10 +54,18 @@ class ArrayStack<T> implements Stack<T> {
         if (isEmpty()) {
             return null;
         }
+		// --top (pre-decrement): Decreases the top index before accessing the element.
+		// Pre-decrement (--top) ensures that top is reduced before retrieving an element.
         T elem = elems[--top];
         elems[top] = null; // Clears the reference to the popped element to aid garbage collection.
         return elem;
     }
+
+/*
+T elem = elems[--top];	Decrements top first, then accesses the element at the new index.
+T elem = elems[top--];	Accesses the element first, then decrements top.
+*/
+
 
     @Override
     public T peek() {

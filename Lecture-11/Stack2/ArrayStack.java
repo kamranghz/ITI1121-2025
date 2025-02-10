@@ -16,6 +16,7 @@ public class ArrayStack implements Stack {
     @Override
     public void push(Object elem) {
         if (top < stackArray.length - 1) {
+			// ++top is pre-increment, meaning the value of top is incremented before it is used in the expression.
             stackArray[++top] = elem;
         } else {
             System.out.println("Stack is full. Cannot push element.");
@@ -25,6 +26,7 @@ public class ArrayStack implements Stack {
     @Override
     public Object pop() {
         if (!isEmpty()) {
+			// top-- is post-decrement, meaning the value of top is used before it is decremented.
             return stackArray[top--];
         } else {
             System.out.println("Stack is empty. Cannot pop element.");
