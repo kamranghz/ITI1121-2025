@@ -20,7 +20,7 @@ public class AddLinkedListDemo2<E> {
         } else {
             Node<E> current = head; // Start at the head of the list
             while (current.next != null) {  // Traverse the list until the last node is reached
-                current = current.next;
+                current.next = current;
             }
             // Attach the new node at the end of the list
             // Note: If we mistakenly modify current.next in the loop instead of current,
