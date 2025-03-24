@@ -1,3 +1,33 @@
+/*
+ * Summary: IterableLinkedListDemo - Custom LinkedList with Iterable Support
+ *
+ * This program demonstrates how to use a **custom LinkedList** that implements `Iterable`,
+ * allowing iteration through both:
+ *  - Traditional `Iterator` usage
+ *  - Java's enhanced for-loop (`for-each`)
+ *
+ * Key Features:
+ * ----------------------------------
+ * - A custom `LinkedList<Integer>` is created.
+ * - Elements 1 through 5 are added using `addLast()`.
+ * - The list is traversed twice to compute the sum:
+ *    1. Using a traditional `Iterator`
+ *    2. Using an enhanced for-loop (which implicitly uses the iterator)
+ * - Both methods compute and print the sum of all elements (output: 15).
+ *
+ * Purpose:
+ * ----------------------------------
+ * - Shows how implementing the `Iterable` interface in a custom data structure
+ *   enables usage of Java’s enhanced for-loop syntax.
+ * - Reinforces understanding of how enhanced for-loops internally rely on iterators.
+ *
+ * Prerequisite:
+ * ----------------------------------
+ * - The `LinkedList` class used must implement `Iterable<E>` and provide a valid `iterator()` method.
+ */
+
+
+
 import java.util.Iterator;
 
 // Custom LinkedList that supports Iterable

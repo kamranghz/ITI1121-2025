@@ -1,3 +1,28 @@
+/*
+ * Summary: MultipleIteratorDemo2 - Demonstrating Independent Iterators on Java's Built-in LinkedList
+ *
+ * This program uses Java's built-in `LinkedList` class to demonstrate how multiple iterators
+ * can independently traverse different or the same lists without interfering with one another.
+ *
+ * Key Steps:
+ * 1. Creates two LinkedLists:
+ *    - `l1` stores Strings: ["A", "B", "C", "D"]
+ *    - `l2` stores Integers: [1, 2, 3]
+ * 2. Creates three iterators:
+ *    - `i` and `j` iterate over `l1` independently.
+ *    - `k` iterates over `l2`.
+ * 3. Demonstrates that:
+ *    - `i` and `j` can traverse the same list (`l1`) independently.
+ *    - `k` traverses a different list (`l2`), also independently.
+ *
+ * Educational Purpose:
+ * - Shows that multiple iterators created from Java’s standard library LinkedList
+ *   do not share internal state, allowing simultaneous and independent traversal.
+ *
+  */
+
+
+
 import java.util.LinkedList;
 import java.util.Iterator;
 

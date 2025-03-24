@@ -1,3 +1,32 @@
+/*
+ * Summary: Custom LinkedList<E> Implementing Iterable<E>
+ *
+ * This code defines a generic singly linked list (`LinkedList<E>`) that supports iteration 
+ * using both the traditional `Iterator` and Java’s enhanced for-loop (`for-each`), thanks 
+ * to its implementation of the `Iterable` interface.
+ *
+ * Key Features:
+ * ---------------------------------------
+ * - `addLast(E value)`: Adds a new element to the end of the list.
+ * - `Node<E>`: Inner static class representing each node with a value and a reference to the next node.
+ * - `iterator()`: Returns a custom iterator (`ListIterator`) starting from the head of the list.
+ * - `ListIterator`: Implements `Iterator<E>` and provides:
+ *     - `hasNext()`: Checks if there are more elements to visit.
+ *     - `next()`: Returns the current element and advances the iterator.
+ *     - `remove()`: Not supported in this version (throws exception).
+ *
+ * Usage:
+ * ---------------------------------------
+ * - Enables both manual iteration via `Iterator` and simplified looping via `for-each`.
+ * - Ensures compatibility with Java’s collection-handling idioms.
+ *
+ * Purpose:
+ * ---------------------------------------
+ * - Demonstrates how to implement `Iterable` for custom data structures.
+ * - Reinforces understanding of Java's iteration mechanism.
+ */
+
+
 import java.util.Iterator;
 import java.util.NoSuchElementException;
 

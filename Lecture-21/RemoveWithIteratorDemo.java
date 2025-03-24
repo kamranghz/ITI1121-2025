@@ -1,3 +1,35 @@
+/*
+ * Summary: RemoveWithIteratorDemo - Custom LinkedList Iterator with Remove and Add Support
+ *
+ * This program demonstrates how to use a custom `LinkedList` class and its inner `ListIterator`
+ * to traverse, remove, and add elements to the list dynamically during iteration.
+ *
+ * Key Operations Demonstrated:
+ * 1. **Creation of a LinkedList<Double>** with values: [2.718, 3.142, 7.389]
+ * 2. **Removal of an element using the iterator**:
+ *    - Moves the iterator to the second element (3.142) and removes it.
+ * 3. **Removal of the first element (2.718)** by resetting the iterator.
+ * 4. **Addition of a new element (9.806)** at the end of the list using the iterator.
+ *
+ * Iterator Behavior:
+ * - `next()` advances the iterator to the next element.
+ * - `remove()` removes the **last element returned by `next()`**.
+ * - `add(E e)` inserts a new node **after the current position**.
+ *
+ * Final Output:
+ * - After removing 3.142: [2.718, 7.389]
+ * - After removing 2.718: [7.389]
+ * - After adding 9.806 at the end: [7.389, 9.806]
+ *
+ * Purpose:
+ * - Illustrates how a custom iterator supports **removal and insertion** in a linked list.
+ * - Emphasizes careful iterator control when modifying the list during traversal.
+ * - Useful for understanding the iterator state and structural changes during iteration.
+ */
+
+
+
+
 import java.util.Iterator;
 
 public class RemoveWithIteratorDemo {

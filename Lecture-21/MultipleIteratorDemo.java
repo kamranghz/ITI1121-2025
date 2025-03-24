@@ -1,3 +1,26 @@
+/*
+ * This Java program demonstrates the implementation of a simple singly linked list 
+ * along with a custom iterator that allows independent traversal over the list.
+ * 
+ * Key Components:
+ * - `Node<E>`: Represents a single node in the linked list, holding a value and a reference to the next node.
+ * - `LinkedList<E>`: A basic singly linked list implementation with a method to add elements at the front (`addFirst`)
+ *   and a method to generate a new iterator (`iterator()`).
+ * - `LinkedListIterator<E>`: A custom iterator class implementing the `Iterator` interface, enabling traversal
+ *   through the linked list without modifying it. It maintains its own state (`current`) and works independently.
+ * 
+ * Demonstration:
+ * - In `main`, a list is created and populated with elements "A" to "D".
+ * - Two separate iterators (`i` and `j`) are created from the same list.
+ * - The iterators are moved independently to show that each iterator maintains its own state,
+ *   proving that multiple iterators on the same list do not interfere with each other.
+ * 
+ * This example is useful to understand how iterators work, how to build them for custom data structures,
+ * and how multiple iterators can coexist and function independently.
+ */
+
+
+
 import java.util.Iterator;
 import java.util.NoSuchElementException;
 

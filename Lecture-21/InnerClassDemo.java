@@ -1,3 +1,24 @@
+/*
+ * This Java program demonstrates the concept of nested classes, 
+ * including both non-static inner classes and static nested classes.
+ * 
+ * Key Concepts:
+ * - The `InnerClassDemo` is the outer class containing:
+ *   1. A non-static inner class (`Inner`) that can access instance members of the outer class.
+ *   2. A static nested class (`StaticNested`) that cannot directly access instance members.
+ * 
+ * The `main` method shows how to:
+ * - Instantiate only the outer class.
+ * - Instantiate the inner class using an outer class instance.
+ * - Instantiate the static nested class directly without an outer instance.
+ * 
+ * This helps in understanding the differences between inner and static nested classes 
+ * and their access to outer class members.
+ */
+
+
+
+
 // Outer class definition
 public class InnerClassDemo {
 
@@ -17,8 +38,8 @@ public class InnerClassDemo {
         public StaticNested() {
             System.out.println("* Static nested class constructor *");
 
-            // ❌ Cannot directly access instance variables like 'message'
-            // ✅ So we simulate with static message (example purpose)
+            // Cannot directly access instance variables like 'message'
+            // So we simulate with static message (example purpose)
             System.out.println("Cannot access outer instance variable directly");
         }
     }

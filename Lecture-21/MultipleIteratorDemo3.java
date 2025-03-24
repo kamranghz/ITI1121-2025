@@ -1,3 +1,23 @@
+/*
+ * Summary: MultipleIteratorDemo3 - Custom Linked List with Add-Last and Independent Iterators
+ *
+ * This Java program demonstrates how to implement a simple generic singly linked list
+ * with support for adding elements to the **end of the list** and creating **multiple independent iterators**.
+ *
+ * Key Features:
+ * - `MultipleIteratorDemo3<E>`: A generic class that defines a custom singly linked list.
+ * - `addLast(E value)`: Adds elements to the **end** of the list (unlike addFirst in previous demos).
+ * - `ListIterator`: An inner class implementing the `Iterator<E>` interface, maintaining its own traversal state.
+ * - Each call to `iterator()` returns a **new, independent iterator**, which starts from the beginning of the list.
+ *
+ * Main Behavior:
+ * - Creates a list with elements ["A", "B", "C", "D"] using `addLast`.
+ * - Demonstrates that two iterators (`i` and `j`) can **traverse the same list independently**.
+ *
+ */
+
+
+
 import java.util.Iterator;
 import java.util.NoSuchElementException;
 

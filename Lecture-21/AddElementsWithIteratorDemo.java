@@ -1,4 +1,39 @@
-// Custom implementation of a generic LinkedList with an inner ListIterator
+/*
+ * Summary: AddElementsWithIteratorDemo - Custom LinkedList with Add-While-Iterating Support
+ *
+ * This program demonstrates how to:
+ * - Create a **custom generic singly linked list** (`LinkedList<E>`)
+ * - Implement an **inner iterator class** (`ListIterator`) that can both **traverse** and **add elements**
+ * - Add elements to the list during iteration, then reset the iterator to print all inserted elements
+ *
+ * Key Components:
+ * 1. `LinkedList<E>`:
+ *    - Custom singly linked list with a `first` node reference
+ *    - Inner static class `Node<E>` to hold value and next pointer
+ *
+ * 2. `ListIterator`:
+ *    - Maintains a reference to the `current` node
+ *    - `hasNext()` checks if the next node exists
+ *    - `next()` moves the iterator forward and returns the current value
+ *    - `add(E o)` inserts a new node **after** the current one and updates the iterator position
+ *      - If called before any `next()`, it inserts at the beginning
+ *
+ * 3. Demo in `main()`:
+ *    - Creates an empty list and an iterator
+ *    - Adds 5 elements (`element-0` to `element-4`) using the iterator
+ *    - Resets the iterator and prints the entire list
+ *
+ * Output:
+ * - A list of strings from `element-0` to `element-4`, printed line by line
+ *
+ * Purpose:
+ * - Demonstrates how to manually control insertion using an iterator pattern
+ * - Shows how an iterator can maintain state and modify a list during traversal
+ * - Useful for understanding how linked list insertions work at an abstract level
+ */
+
+
+
 public class AddElementsWithIteratorDemo {
 
     public static void main(String[] args) {

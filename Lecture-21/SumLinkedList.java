@@ -1,3 +1,22 @@
+/*
+ * This Java program demonstrates how to use a LinkedList with an Iterator
+ * to store and sum a sequence of integers.
+ * 
+ * Key Features:
+ * - A `LinkedList<Integer>` is used to store a sequence of integers (0 to 4).
+ * - An `Iterator` is used to traverse the list in a standard way.
+ * - Each element in the list is accessed and summed up using the iterator.
+ * 
+ * Best Practices:
+ * - Uses `Integer.valueOf(i)` instead of `new Integer(i)` to avoid deprecation warnings.
+ * - Demonstrates how to iterate over a LinkedList with `Iterator` rather than a for-each loop,
+ *   which can be useful in cases where element removal or fine-grained control is needed.
+ * 
+ * The final result is the total sum of all integers in the list, printed to the console.
+ */
+
+
+
 import java.util.LinkedList;
 import java.util.Iterator;
 
