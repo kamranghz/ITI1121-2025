@@ -68,9 +68,4 @@ Ph.D. Candidate – University of Ottawa
 
 ---
 
-## 📜 License
-This repository is for **educational use only** under the **MIT License**.
-
----
-
 For questions, please refer to the course portal or email the instructor directly.
